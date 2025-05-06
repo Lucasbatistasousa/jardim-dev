@@ -3,11 +3,15 @@ import { useState } from 'react'
 import './App.css'
 import ContactButton from '../../components/ContactButton'
 import HeaderLi from '../../components/Header'
+import Card from '../../components/Cards'
+import PlantCard from '../../components/PlantCards'
 
+import { cactocandelabro, cactusrabodemacaco, ericajaponica, violetapendente } from '../../assets/images/index'
 import fundo from '../../assets/fundo.jpg'
 import casa from '../../assets/casa.jpg'
-import PlantCard from '../../components/PlantCards'
-import samambaia from '../../assets/samambaia.jpg'
+import tagdesconto from '../../assets/tagdesconto.png'
+import mesa from '../../assets/mesa.png'
+import megafone from '../../assets/megafone.png'
 
 function Home() {
   const [count, setCount] = useState(0)
@@ -56,8 +60,21 @@ function Home() {
         </div>
 
 
-        <div>
-          <PlantCard nome="Samambaia" descricao="Planta resistente, ideal para ambientes internos." imagem={samambaia}/>
+        <div className='flex gap-10 mt-8 mb-8 justify-center'>
+          <Card imagem={tagdesconto} titulo="Promoções" paragrafo="Surpreenda-se com as promoções do Espaço Botânico!" />
+          <Card imagem={mesa} titulo="Espaço e Lazer" paragrafo="Onde você pode passear, se inspirar, relaxar, contemplar a natureza."/>
+          <Card imagem={megafone} titulo="Dicas do Espaço" paragrafo="O Viveiro Espaço Botânico tem as melhores dicas para o seu jardim!"/>
+        </div>
+
+        <div className='flex justify-center p-5 mb-5'>
+          <h3 className='font-bold text-4xl'>PLANTAS EM DESTAQUE</h3>
+        </div>
+
+        <div className='flex gap-5 justify-center text-center'>
+          <PlantCard imagem={cactusrabodemacaco} nome="CACTUS RABO-DE-MACACO"/>
+          <PlantCard imagem={cactocandelabro} nome="CACTUS CANDELABRO"/>
+          <PlantCard imagem={ericajaponica} nome="ERICA JAPONICA" />
+          <PlantCard imagem={violetapendente} nome="VIOLETA PENDENTE" />
         </div>
       </section>
 

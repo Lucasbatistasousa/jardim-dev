@@ -7,6 +7,7 @@ import Home from './pages/Home/App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Home />
     <RouterProvider router={router} />
   </StrictMode>,
 )
