@@ -71,13 +71,29 @@ function Home() {
         </div>
 
         <div className='flex gap-5 justify-center text-center'>
-          <PlantCard imagem={cactusrabodemacaco} nome="CACTUS RABO-DE-MACACO"/>
-          <PlantCard imagem={cactocandelabro} nome="CACTUS CANDELABRO"/>
-          <PlantCard imagem={ericajaponica} nome="ERICA JAPONICA" />
-          <PlantCard imagem={violetapendente} nome="VIOLETA PENDENTE" />
+          <PlantCard imagem={cactusrabodemacaco} nome="CACTUS RABO-DE-MACACO" descricao="Tem caules longos e peludos que lembram um rabo de macaco. É ideal para vasos pendentes, gosta de luz indireta e floresce com cores vibrantes. Fácil de cuidar e muito ornamental."/>
+          <PlantCard imagem={cactocandelabro} nome="CACTUS CANDELABRO" descricao="Tem formato ereto e ramificado, lembrando um candelabro. É resistente, cresce bem em sol pleno ou meia-sombra, e precisa de pouca água. Ideal para decorar ambientes com estilo."/>
+          <PlantCard imagem={ericajaponica} nome="ERICA JAPONICA" descricao="É um arbusto delicado com flores pequenas e coloridas, que surgem no inverno e primavera. Gosta de clima ameno, solo bem drenado e luz indireta. Perfeita para jardins ou vasos decorativos."/>
+          <PlantCard imagem={violetapendente} nome="VIOLETA PENDENTE" descricao="É uma planta de folhas aveludadas e flores vibrantes, ideal para vasos suspensos. Prefere luz indireta, solo úmido e bem drenado. Charmosa e fácil de cuidar."/>
         </div>
       </section>
 
+      <section className='p-10 bg-green-900'>
+        <h3 className='text-3xl text-white'>Notícias</h3>
+        <div className='flex gap-10'>
+          <div className='w-60 p-6'>
+            <img src="" alt="" />
+            <h4>Novidades sobre a vendas de plantas</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum debitis esse eum repellat doloremque. Quas sit, magnam cum debitis corrupti maiores unde atque dolor nostrum itaque, cumque labore iste?</p>
+            <button>LER MAIS</button>
+          </div>
+          <div>
+            <h4>Plantas que foram proibidas de vender</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos saepe maxime dolore quas ab obcaecati. Cum consequuntur expedita officia velit repellendus dignissimos. Atque minus perspiciatis odio quaerat laboriosam sunt ea.</p>
+            <button>LER MAIS</button>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
