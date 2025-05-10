@@ -12,6 +12,11 @@ import casa from '../../assets/casa.jpg'
 import tagdesconto from '../../assets/tagdesconto.png'
 import mesa from '../../assets/mesa.png'
 import megafone from '../../assets/megafone.png'
+import cuidadodeplantas from '../../assets/cuidadodeplantas.jpg'
+import dicasparajardim from '../../assets/dicasparajardim.jpg'
+import jardinagem from '../../assets/jardinagem.jpg'
+import paisagismo from '../../assets/paisagismo.jpg'
+import lucasdevlogo from '../../assets/lucasdevlogo.png'
 
 function Home() {
   const [count, setCount] = useState(0)
@@ -22,7 +27,7 @@ function Home() {
       <section className="bg-cover bg-center h-screen flex flex-col items-center bg-green-900 gap-40" style={{ backgroundImage: `url(${fundo})` }}>
         <header className='w-full'>
           <ul className='flex gap- text-white p-8 justify-between items-center w-full'>
-            <h1>Espaço Botanico Logo</h1>
+            <h1>Jardim Dev Logo</h1>
             <div className='flex gap-16 items-center'>
               <HeaderLi titulo="HOME" />
               <HeaderLi titulo="PLANTAS E PRODUTOS" />
@@ -37,7 +42,7 @@ function Home() {
         </header>
         <div className='w-full h-64 flex items-center justify-center flex-col '>
           <h2 className='text-center text-6xl font-bold tex w-full text-amber-50'>Seja Bem vindo ao</h2>
-          <h1 className='text-center text-8xl font-bold tex w-full text-green-600' style={{ textShadow: '1px 1px 10px rgba(0,0,0,0.4)' }}>Espaço Botânico</h1>
+          <h1 className='text-center text-8xl font-bold tex w-full text-green-600' style={{ textShadow: '1px 1px 10px rgba(0,0,0,0.4)' }}>Jardim Dev</h1>
 
           <div className='mt-8'>
             <ContactButton titulo="ENTRAR EM CONTATO" />
@@ -48,12 +53,12 @@ function Home() {
       <section className='pt-20 pb-20'>
         <h3 className='text-center text-5xl font-bold tex w-full text-green-600 mb-12'>Um Lugar Tranquilo para Estar com Quem Você Ama</h3>
         <div className='max-w-7xl flex gap-14 m-auto'>
-          <p className='text-left w-xl'>O Espaço Botânico, Centro de Jardinagem, é uma empresa que se diferencia por adotar um conceito inovador no comércio de plantas ornamentais, produtos e acessórios para jardinagem e paisagismo em Uberlândia e região. Com uma estrutura diferenciada, a loja é rodeada por jardins, cafeteria e restaurante, parque infantil e amplo estacionamento.
+          <p className='text-left w-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor aliquid recusandae alias suscipit corporis aperiam, sapiente fugit quae tenetur. Sint, error voluptate aut fugit unde fugiat? Voluptatibus, error numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officia aspernatur delectus, praesentium itaque obcaecati nihil iusto ab deserunt est fuga perferendis nulla, possimus magnam rem veniam, accusamus quibusdam numquam.
           <br />
           <br />
-            O espaço foi criado com a intenção de proporcionar aos clientes e visitantes uma sensação única de bem-estar, através de um ambiente confortável e convidativo para o descanso e contemplação.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit itaque accusamus autem necessitatibus aspernatur maxime fugiat, repellendus sunt error! Esse obcaecati quae animi debitis sed voluptatibus similique reprehenderit incidunt id?
 
-            Nesta mesma área de 100.000 m² situa-se o viveiro de produção, onde as mudas são cultivadas em estufas e a campo aberto e inspecionadas por uma equipe de profissionais capacitados aliados à alta tecnologia, visando a produção de novas variedades que possam conquistar os mercados mais exigentes da atualidade.</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur eaque tenetur facere nam placeat doloribus, provident, cupiditate voluptate, similique nulla saepe quas nobis! Consequuntur veniam dolores ducimus itaque est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum praesentium impedit maiores tempore voluptatum nam molestias corporis asperiores? Molestias magnam, corrupti perferendis a labore ipsa aliquam praesentium eum debitis minus!</p>
           <div>
             <img className='max-w-xl shadow-lg rounded-xl' src={casa} alt="imagem-casa" />
           </div>
@@ -61,9 +66,9 @@ function Home() {
 
 
         <div className='flex gap-10 mt-8 mb-8 justify-center'>
-          <Card imagem={tagdesconto} titulo="Promoções" paragrafo="Surpreenda-se com as promoções do Espaço Botânico!" />
-          <Card imagem={mesa} titulo="Espaço e Lazer" paragrafo="Onde você pode passear, se inspirar, relaxar, contemplar a natureza."/>
-          <Card imagem={megafone} titulo="Dicas do Espaço" paragrafo="O Viveiro Espaço Botânico tem as melhores dicas para o seu jardim!"/>
+          <Card imagem={tagdesconto} titulo="Promoções" paragrafo="Lorem ipsum dolor sit amet, consectetur adipisicing elit." />
+          <Card imagem={mesa} titulo="Lazer" paragrafo="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
+          <Card imagem={megafone} titulo="Dicas do Dev" paragrafo="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
         </div>
 
         <div className='flex justify-center p-5 mb-5'>
@@ -79,21 +84,44 @@ function Home() {
       </section>
 
       <section className='p-10 bg-green-900'>
-        <h3 className='text-3xl text-white'>Notícias</h3>
-        <div className='flex gap-10'>
-          <div className='w-60 p-6'>
-            <img src="" alt="" />
-            <h4>Novidades sobre a vendas de plantas</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum debitis esse eum repellat doloremque. Quas sit, magnam cum debitis corrupti maiores unde atque dolor nostrum itaque, cumque labore iste?</p>
-            <button>LER MAIS</button>
+        <h3 className='text-3xl text-white text-center font-bold mb-8'>DICAS PARA SEU JARDIM</h3>
+        <div className='flex gap-10 justify-center'>
+          <div className='flex flex-col w-2xl p-6 bg-neutral-900 rounded-2xl justify-center items-center text-center hover:scale-105 transition-transform'>
+            <img className='w-96 rounded-3xl' src={cuidadodeplantas} alt="Cuidado de plantas" />
+            <h4 className='font-bold text-3xl mt-3 mb-3 text-green-600'>Cuidados especiais para plantas</h4>
+            <p className='text-white mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum debitis esse eum repellat doloremque. Quas sit, magnam cum debitis corrupti maiores unde atque dolor nostrum itaque, cumque labore iste?</p>
+            <button className='bg-green-500 px-12 rounded-2xl hover:scale-105 transition-transform cursor-pointer'>LER MAIS</button>
           </div>
-          <div>
-            <h4>Plantas que foram proibidas de vender</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos saepe maxime dolore quas ab obcaecati. Cum consequuntur expedita officia velit repellendus dignissimos. Atque minus perspiciatis odio quaerat laboriosam sunt ea.</p>
-            <button>LER MAIS</button>
+          <div className='flex flex-col w-2xl p-6 bg-neutral-900 rounded-2xl justify-center items-center text-center hover:scale-105 transition-transform'>
+            <img className='w-96 rounded-3xl' src={dicasparajardim} alt="Dicas para seu jardim" />
+            <h4 className='font-bold text-3xl mt-3 mb-3 text-green-600'>Dicas para Iniciantes em Jardinagem</h4>
+            <p className='text-white mb-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos saepe maxime dolore quas ab obcaecati. Cum consequuntur expedita officia velit repellendus dignissimos. Atque minus perspiciatis odio quaerat laboriosam sunt ea.</p>
+            <button className='bg-green-500 px-12 rounded-2xl hover:scale-105 transition-transform cursor-pointer'>LER MAIS</button>
           </div>
         </div>
       </section>
+
+      <section className='p-10'>
+        <h3 className='text-3xl text-center font-bold mb-8'>SERVIÇOS</h3>
+        <div className='flex gap-10 justify-center'>
+          <Card imagem={jardinagem} titulo={"JARDINAGEM"} paragrafo={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur eaque tenetur facere nam placeat doloribus, provident, cupiditate voluptate, similique nulla saepe quas nobis!"} />
+          <Card imagem={paisagismo} titulo={"PAISAGISMO"} paragrafo={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur eaque tenetur facere nam placeat doloribus, provident, cupiditate voluptate, similique nulla saepe quas nobis!"}/>
+        </div>
+      </section>
+
+      <footer className=' flex p-10 bg-green-900 justify-around'>
+        <div className='flex items-center'>
+          <img className='w-24' src={lucasdevlogo} alt="" />
+          <div>
+            <h3 className='text-white'>©Copyright Lucas Dev</h3>
+            <h4 className='text-white'>Desenvolvido por Lucas Dev | Front End Developer</h4>
+          </div>
+        </div>
+        <div className='flex flex-col justify-center'>
+          <p className='text-white'>EMAIL: lucasdev.desenvolvedorweb@gmail.com</p>
+          <p className='text-white'>WhatsApp: (34) 99337-0334</p>
+        </div>
+      </footer>
     </>
   )
 }
