@@ -42,7 +42,7 @@ function Home() {
         </header>
         <div className='w-full h-64 flex items-center justify-center flex-col '>
           <h2 className='text-center text-6xl font-bold tex w-full text-amber-50'>Seja Bem vindo ao</h2>
-          <h1 className='text-center text-8xl font-bold tex w-full text-green-600' style={{ textShadow: '1px 1px 10px rgba(0,0,0,0.4)' }}>Jardim Dev</h1>
+          <h1 className='text-center text-8xl font-bold tex w-full text-green-600' style={{ textShadow: '1px 1px 10px rgba(0,0,0,0.4)' }}>Dev Garden</h1>
 
           <div className='mt-8'>
             <ContactButton titulo="ENTRAR EM CONTATO" />
