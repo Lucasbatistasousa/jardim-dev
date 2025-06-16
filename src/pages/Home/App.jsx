@@ -27,7 +27,7 @@ function Home() {
       <section className="bg-cover bg-center h-screen flex flex-col items-center bg-green-900 gap-40" style={{ backgroundImage: `url(${fundo})` }}>
         <header className='w-full'>
           <ul className='flex gap- text-white p-8 justify-between items-center w-full'>
-            <h1>Jardim Dev Logo</h1>
+            <h1>Dev Garden Logo</h1>
             <div className='flex gap-16 items-center'>
               <HeaderLi titulo="HOME" />
               <HeaderLi titulo="PLANTAS E PRODUTOS" />
