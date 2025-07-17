@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import './App.css'
+import './index.css'
 import ContactButton from '../../components/ContactButton'
 import HeaderLi from '../../components/Header'
 import Card from '../../components/Cards'
